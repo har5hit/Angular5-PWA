@@ -1,0 +1,15 @@
+<mat-card>
+  <form #loginForm="ngForm" (ngSubmit)="login(loginForm.form.value)">
+    <mat-form-field>
+      <input matInput #v_email type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+       placeholder="Email" name="email" ngModel required>
+    </mat-form-field>
+  <br>
+    <mat-form-field>
+      <input matInput placeholder="Password" #v_pass  name="pwd" ngModel required>
+    </mat-form-field>
+
+    <br>
+    <button mat-raised-button [disabled]="loginForm.form.invalid" color="primary" type="submit">Login</button>
+  </form>
+</mat-card>

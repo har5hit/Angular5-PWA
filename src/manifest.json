@@ -1,0 +1,9 @@
+{
+  "name": "CRMDemo",
+  "short_name": "CRM",
+  "theme_color": "#b92b27",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "orientation": "portrait",
+  "start_url": "./?utm_source=web_app_manifest"
+}
